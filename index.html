@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>PHOTOGRAPHY</b></h1>
+  <p><b>Travel photos from favorite destinations.</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="austin-texas1.JPG" style="width:100%">
+    <img src="austin-texas2.JPG" style="width:100%">
+    <img src="austin-texas3.JPG" style="width:100%">
+    <img src="austin-texas4.JPG" style="width:100%">
+    <img src="austin-texas5.JPG" style="width:100%">
+    <img src="austin-texas6.JPG" style="width:100%">
+    <img src="new-york-new-york4.JPG" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="austin-texas7.JPG" style="width:100%">
+    <img src="austin-texas8.JPG" style="width:100%">
+    <img src="chicago-illinois1.JPG" style="width:100%">
+    <img src="chicago-illinois7.JPG" style="width:100%">
+    <img src="chicago-illinois8.JPG" style="width:100%">
+    <img src="chicago-illinois9.JPG" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="colorado-springs11.JPG" style="width:100%">
+    <img src="colorado-springs2.JPG" style="width:100%">
+    <img src="los-angeles-los-angeles3.JPG" style="width:100%">
+    <img src="Lyon-France1.JPG" style="width:100%">
+    <img src="lyon-france4.JPG" style="width:100%">
+    <img src="lyon-france6.JPG" style="width:100%">
+    <img src="lyon-france11.JPG" style="width:100%">
+    <img src="lyon-france10.JPG" style="width:100%">
+    <img src="niagara-falls6.JPG" style="width:100%">
+  </div>
+</div>
+
+<head>
+    <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="gallery">
+      <a target="_blank" href="lyon-france11.JPG">
+        <img src="lyon-france11.JPG" alt="Lyon" width="600" height="400">
+      </a>
+      <div class="desc">Lyon, France</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="new-york-new-york7.JPG">
+        <img src="new-york-new-york7.JPG" alt="New York" width="600" height="400">
+      </a>
+      <div class="desc">New York, New York</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="Page-arizona3.JPG">
+        <img src="Page-arizona3.JPG" alt="Los Angeles" width="600" height="400">
+      </a>
+      <div class="desc">Page, Arizona</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="niagara-falls5.JPG">
+        <img src="niagara-falls5.JPG" alt="Niagara Falls" width="600" height="400">
+      </a>
+      <div class="desc">Niagara Falls, Ontario</div>
+    </div>
+
+<div class="w3-container">
+    <h2>City Slideshow</h2>
+    <p></p>
+  </div>
+  
+  <div class="w3-content w3-display-container">
+  
+  <div class="w3-display-container mySlides">
+    <img src="new-york-new-york4.JPG" style="width:100%">
+    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+      New York
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="chicago-illinois1.JPG" style="width:100%">
+    <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+      Chicago, Illinois
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="lyon-france5.JPG" style="width:100%">
+    <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+      Lyon, France
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="austin-texas2.JPG" style="width:100%">
+    <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+      Austin, Texas
+    </div>
+  </div>
+  
+  <div class="w3-display-container mySlides">
+    <img src="colorado-springs11.JPG" style="width:100%">
+    <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+      Colorado Springs, Colorado
+    </div>
+  </div>
+  
+  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+  
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+ 
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
